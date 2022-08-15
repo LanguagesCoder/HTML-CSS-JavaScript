@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="div">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downlaod Button With Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+</head>
+<body>
+    <div class="button">
+        <div class="content">
+            <i class="bx bx-cloud-download"></i>
+            <span class="button-text">Downlaod</span>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector('.button');
+
+        button.addEventListener("click", () => {
+            button.classList.add("active");
+
+            setTimeout(() => {
+                button.classList.remove("active");
+                document.querySelector("i").classList.replace("bx-cloud-download", "bx-check-circle");
+                document.querySelector(".button-text").innerText = "Completed"
+            }, 6000);
+        })
+    </script>
+</body>
+</html>
