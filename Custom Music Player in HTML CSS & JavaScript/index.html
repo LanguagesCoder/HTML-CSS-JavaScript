@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="div">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <!-- IMAGE AREA -->
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <!-- SONG DETAILS -->
+        <div class="song-details">
+            <p class="name">Beauz & Jnva - Crazy</p>
+            <p class="artist">Beauz & Jnva</p>
+        </div>
+        <!-- PROGRESS BAR -->
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+            <!-- Timer -->
+            <div class="timer">
+                <span class="current">00:00</span>
+                <span class="duration">00:00</span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+        <!-- CONTROLS -->
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist Looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <!-- PLAY & PAUSE -->
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <!-- MUSIC LIST -->
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul></ul>
+        </div>
+    </div>
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
